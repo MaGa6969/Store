@@ -14,12 +14,16 @@ public class ProductController {
         return greeting;
     }
 
-    public List<Product> products = new ArrayList<>();
-    @GetMapping("/products")
-    public List<Product> allProducts(){
-        return products;
-    }
-}
+    public class Product {
+        private List<Product> products;
+        public Product() {
+            products = new ArrayList<>();
+        }
+        @GetMapping("/products")
+        public List<Product> allProducts(){
+            return products;
+        }
+
 
 
 
