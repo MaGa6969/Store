@@ -2,7 +2,7 @@ package org.factoriaf5.store.model;
 
 public class Product {
     private final String name;
-    private int price;
+    private final int price;
 
     public Product(String name, int price) {
         this.name = name;
